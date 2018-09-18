@@ -47,15 +47,14 @@ else:
 def convert(ffmpegcmd1):
     print('\n\nConversion in progress. Pass 1. Please wait...\n\n')
     cmd = subprocess.run(ffmpegcmd1,shell=False,stdout=subprocess.PIPE)
-    print('\n===============\n  PASS 1 = DONE!  \n===============\n')
+    print('\n==================\n  PASS 1 = DONE!  \n==================\n')
     
 
 def convert2(ffmpegcmd2):
     print('\n\nConversion in progress. Pass 2. Please wait...\n\n')
     cmd = subprocess.run(ffmpegcmd2,shell=False,stdout=subprocess.PIPE)
-    print('\n===============\n  PASS 2 = DONE!  \n===============\n')
+    print('\n==================\n  PASS 2 = DONE!  \n==================\n')
     exit()
     
 convert(ffmpegcmd1)
-# print('First pass finished')
 convert2(ffmpegcmd2)
