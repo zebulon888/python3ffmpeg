@@ -1,7 +1,8 @@
 # a program to convert a video to DVD
 import subprocess
 # fps = [25, 29.97,]
-# size = ['720x480', '720x576']
+# size = ['720x576', '720x480']
+
 
 # options for interlaced video
 # interlaced = ('-flags +ilme+ildct', -top -1')
@@ -15,7 +16,7 @@ DVD_PAL_p = ('PAL progressive 6400k (VBR)',)
 DVD_PAL_i = ('PAL interlaced 6400k (VBR)',)
 
 print('\n\nThis little program allows you to transcode a file to the mpeg2video codec (DVD).')
-file = '-i ' + input('Please enter the source video file name: ') #  Volldampf.mkv'
+file = '-i ' + input('Please enter the source video file name: ') #  i.e. example.mkv'
 output = input('Please enter a new filename for the transcoded video: ')
 
 print('\nTo transcode to DVD please make a choice.')
